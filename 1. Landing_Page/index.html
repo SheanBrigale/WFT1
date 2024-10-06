@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PUNONG MOON</title>
-    <link rel="stylesheet" href="Landing.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
     <header>
         <nav>
             <ul class="sidebar">
-                <li><a href="/1. Landing_Page/index.html"><h1>PUNONG MOON</h1></a></li>
+                <li onclick=hideSidebar()><a href="/1. Landing_Page/index.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="/1. Landing_Page/index.html">Home</a> </li>
                 <li><a href="/2. About/About.html">About</a> </li>
                 <li><a href="/3. Books/Books.html">Books</a> </li>
-                <li><a href="/4. Contacts/Contacts.html">Contacts</a> </li>
+                <li><a href="/4. Contacts/Contacts.html">Contact</a> </li>
                 <li><a href="/5. Shop/Shop.html">Shop</a> </li>
             </ul>
 
             <ul>
                 <li><a href="/1. Landing_Page/index.html"><h1>PUNONG MOON</h1></a></li>
-                <li><a href="/1. Landing_Page/index.html">Home</a> </li>
-                <li><a href="/2. About/About.html">About</a> </li>
-                <li><a href="/3. Books/Books.html">Books</a> </li>
-                <li><a href="/4. Contacts/Contacts.html">Contacts</a> </li>
-                <li><a href="/5. Shop/Shop.html">Shop</a> </li>
+                <li class="hideOnMobile"><a href="/1. Landing_Page/index.html">Home</a> </li>
+                <li class="hideOnMobile"><a href="/2. About/About.html">About</a> </li>
+                <li class="hideOnMobile"><a href="/3. Books/Books.html">Books</a> </li>
+                <li class="hideOnMobile"><a href="/4. Contacts/Contacts.html">Contact</a> </li>
+                <li class="hideOnMobile"><a href="/5. Shop/Shop.html">Shop</a> </li>
+                <li class="menubtn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
     </header>
@@ -37,5 +38,15 @@
     <div class="footer">
         <p>PUNONG MOON AU STORIES &copy; 2024</p>
     </div>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'           
+        }
+    </script>
 </body>
 </html>
