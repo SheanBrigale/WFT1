@@ -42,6 +42,11 @@ nav a:hover{
     background-color: #e2c9b4;
 }
 
+nav ul li a h1:hover{
+    font-size: 26px;
+    font-weight: bold;
+}
+
 nav li:first-child{
     margin-right: auto;
 }
