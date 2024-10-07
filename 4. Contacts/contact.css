@@ -89,7 +89,27 @@ nav li:first-child{
     }
 }
 
+/* BODY */
+.emailer{
+    display: grid;
+    grid-template-columns: repeat(2, 10fr);
+    margin: 5px;
+    column-gap: 10px;
+    row-gap: 10px;
+    gap: 5px;
+}
 
+.contact{
+
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* FOOTER */
 .footer{
     position: fixed;
     left: 0;

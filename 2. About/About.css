@@ -39,8 +39,9 @@ nav a{
 }
 
 nav a:hover{
-    background-color: #e2c9b4;
+    color: #e7c1a2;
 }
+
 
 nav li:first-child{
     margin-right: auto;
@@ -82,14 +83,13 @@ nav li:first-child{
         display: block;
     }
 }
-@media(max-width:400px){
+@media(max-width:450px){
     .sidebar{
         width: 100%;
     }
 }
-
 /* BODY */
-img {
+#dp{
     margin-top: 50px;
     width: 250px;
   }
@@ -109,8 +109,9 @@ p{
 }
 
 .sites{
+    margin: 1px 600px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly ;
 }
 
 .footer P{

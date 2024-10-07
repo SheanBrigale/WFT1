@@ -89,7 +89,28 @@ nav li:first-child{
     }
 }
 
+/* BODY */
+.booksContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 5px;
+}
 
+.books{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.books:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* FOOTER */
 .footer{
     position: fixed;
     left: 0;
